@@ -1,5 +1,9 @@
+/**
+ * 
+ * @author DD
+ * paramet bowlingCode
+ */
 public class BowlingGame {
-
     public int getBowlingScore(String bowlingCode) {
         char[] chars = bowlingCode.toCharArray();//bowlingCode描述保龄球比赛成绩的字符串
         int i = 0;//定义初始变量i从零开始
@@ -36,7 +40,7 @@ public class BowlingGame {
             i++;
 
         }
-        System.out.println(Arrays.toString(socere));
+        
         int[] socere2 = new int[10];
         int j = socere2.length - 1;
 
@@ -64,7 +68,7 @@ public class BowlingGame {
         while (j < socere2.length) {//计算总分数
             sum += socere2[j++];
         }
-        System.out.println(Arrays.toString(socere2));
+        
         return sum;
     }
 
